@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriNova — Natural Healthy Snacks | Low-Sugar Jams, Ragi & Quinoa Bars</title>
+    <meta name="description" content="NutriNova offers premium healthy snack bars made with ragi, quinoa, nuts & seeds, plus preservative-free, low-sugar jams, jellies & marmalades. Shop natural goodness today!">
+    <meta name="keywords" content="healthy snacks, ragi bars, quinoa bars, natural jam, preservative free, low sugar jelly, marmalade, organic snacks, NutriNova">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text">Nutri<span class="logo-accent">Nova</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#benefits" class="nav-link">Benefits</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO SECTION ═══ -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content" data-animate="fade-right">
+                <span class="hero-badge">🌱 100% Natural Ingredients</span>
+                <h1 class="hero-title">
+                    Nourish Your Body with
+                    <span class="hero-highlight">Nature's Best</span>
+                </h1>
+                <p class="hero-subtitle">Premium snack bars crafted with ragi, quinoa, nuts & seeds. Plus artisanal jams, jellies & marmalades — all low-sugar and preservative-free.</p>
+                <div class="hero-cta">
+                    <a href="#products" class="btn btn-primary btn-lg">
+                        Shop Now
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Products</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Natural</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-animate="fade-left">
+                <div class="hero-image-wrapper">
+                    <div class="hero-product-card card-1">
+                        <div class="hpc-emoji">🥜</div>
+                        <span>Nuts & Seeds Bar</span>
+                    </div>
+                    <div class="hero-product-card card-2">
+                        <div class="hpc-emoji">🍓</div>
+                        <span>Berry Jam</span>
+                    </div>
+                    <div class="hero-product-card card-3">
+                        <div class="hpc-emoji">🌾</div>
+                        <span>Ragi Energy Bar</span>
+                    </div>
+                    <div class="hero-main-visual">
+                        <svg viewBox="0 0 400 400" class="hero-svg">
+                            <defs>
+                                <linearGradient id="heroGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#2d6a4f;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#95d5b2;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="heroGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#d4a373;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#faedcd;stop-opacity:0.6" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="200" cy="200" r="180" fill="url(#heroGrad2)" opacity="0.3"/>
+                            <circle cx="200" cy="200" r="140" fill="url(#heroGrad1)" opacity="0.15"/>
+                            <text x="200" y="180" text-anchor="middle" font-size="80" fill="none">🥣</text>
+                            <text x="200" y="180" text-anchor="middle" font-size="80">🥣</text>
+                            <text x="130" y="280" text-anchor="middle" font-size="40">🌿</text>
+                            <text x="270" y="130" text-anchor="middle" font-size="35">🍃</text>
+                            <text x="300" y="280" text-anchor="middle" font-size="30">🌰</text>
+                            <text x="100" y="140" text-anchor="middle" font-size="28">🫐</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT US ═══ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title">About <span class="text-accent">NutriNova</span></h2>
+                <p class="section-desc">Born from a passion for wholesome nutrition, NutriNova bridges the gap between delicious taste and natural goodness.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-visual" data-animate="fade-right">
+                    <div class="about-image-card">
+                        <div class="about-emoji-display">
+                            <span class="about-big-emoji">🌾</span>
+                            <div class="about-floating">
+                                <span>🥜</span>
+                                <span>🍓</span>
+                                <span>🌱</span>
+                                <span>🍊</span>
+                            </div>
+                        </div>
+                        <div class="about-badge-card">
+                            <span class="abc-icon">✨</span>
+                            <div>
+                                <strong>Certified Organic</strong>
+                                <small>FSSAI Approved</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content" data-animate="fade-left">
+                    <h3>We Believe in <span class="text-accent">Real Food</span></h3>
+                    <p>At NutriNova, every product starts with a simple question: <em>"Would we feed this to our own family?"</em> That's why our snack bars use ancient grains like <strong>ragi and quinoa</strong>, packed with <strong>premium nuts and seeds</strong> — no artificial sweeteners, no hidden preservatives.</p>
+                    <p>Our artisanal <strong>jams, jellies, and marmalades</strong> are slow-cooked in small batches using only ripe, hand-picked fruits with minimal natural sugar. Every jar is a burst of real flavor, the way nature intended.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🌿</div>
+                            <div>
+                                <strong>Farm to Table</strong>
+                                <span>Sourced from organic farms</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🔬</div>
+                            <div>
+                                <strong>Lab Tested</strong>
+                                <span>Quality assured at every step</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">♻️</div>
+                            <div>
+                                <strong>Eco Packaging</strong>
+                                <span>Sustainable & recyclable</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ BENEFITS SECTION ═══ -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">The NutriNova <span class="text-accent">Difference</span></h2>
+                <p class="section-desc">Every product is a promise of pure nutrition. Here's what sets us apart.</p>
+            </div>
+            <div class="benefits-grid" data-animate="fade-up">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚫</div>
+                    <h3>Zero Preservatives</h3>
+                    <p>No artificial preservatives or chemicals. Just pure, natural ingredients that your body loves.</p>
+                </div>
+                <div class="benefit-card featured">
+                    <div class="benefit-icon">🍯</div>
+                    <h3>Low Sugar</h3>
+                    <p>Sweetened with minimal natural sugars. Enjoy guilt-free snacking with up to 70% less sugar.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌾</div>
+                    <h3>Ancient Grains</h3>
+                    <p>Powered by ragi & quinoa — superfoods packed with calcium, iron, and complete protein.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💪</div>
+                    <h3>High Protein</h3>
+                    <p>Loaded with almonds, cashews, pumpkin seeds & flaxseeds for sustained energy all day.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🫙</div>
+                    <h3>Small Batch</h3>
+                    <p>Our jams & marmalades are slow-cooked in small batches for maximum flavor & freshness.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌍</div>
+                    <h3>Sustainably Made</h3>
+                    <p>From farm-sourced ingredients to eco-friendly packaging — we care for the planet too.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PRODUCTS SECTION ═══ -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Our Products</span>
+                <h2 class="section-title">Shop <span class="text-accent">NutriNova</span></h2>
+                <p class="section-desc">Discover our range of healthy snack bars and artisanal preserves. Every bite is a step towards better health.</p>
+            </div>
+
+            <!-- Product Filter -->
+            <div class="product-filters" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="bars">Snack Bars</button>
+                <button class="filter-btn" data-filter="jams">Jams & Spreads</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+
+                <!-- SNACK BARS -->
+                <div class="product-card" data-category="bars" data-animate="fade-up">
+                    <div class="product-image" style="background: linear-gradient(135deg, #d4a373 0%, #e9c46a 100%);">
+                        <span class="product-badge">Bestseller</span>
+                        <div class="product-emoji">🌾</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" onclick="quickView('ragi-energy')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Snack Bar</span>
+                        <h3 class="product-name">Ragi Energy Bar</h3>
+                        <p class="product-desc">Finger millet, dates, almonds & honey. Rich in calcium & iron.</p>
+                        <div class="product-meta">
+                            <div class="product-tags">
+                                <span class="tag">Gluten-Free</span>
+                                <span class="tag">High Fiber</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">₹149</span>
+                                <span class="price-original">₹199</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('ragi-energy', 'Ragi Energy Bar', 149)" id="add-ragi-energy">
+                                Add to Cart
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bars" data-animate="fade-up">
+                    <div class="product-image" style="background: linear-gradient(135deg, #fefae0 0%, #e9c46a 100%);">
+                        <span class="product-badge new">New</span>
+                        <div class="product-emoji">🥣</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" onclick="quickView('quinoa-crunch')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Snack Bar</span>
+                        <h3 class="product-name">Quinoa Crunch Bar</h3>
+                        <p class="product-desc">Puffed quinoa, dark chocolate, chia seeds & cranberries. Complete protein source.</p>
+                        <div class="product-meta">
+                            <div class="product-tags">
+                                <span class="tag">Vegan</span>
+                                <span class="tag">Protein-Rich</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">₹169</span>
+                                <span class="price-original">₹219</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('quinoa-crunch', 'Quinoa Crunch Bar', 169)" id="add-quinoa-crunch">
+                                Add to Cart
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bars" data-animate="fade-up">
+                    <div class="product-image" style="background: linear-gradient(135deg, #c8b6a6 0%, #a4907c 100%);">
+                        <div class="product-emoji">🥜</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" onclick="quickView('nutty-delight')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Snack Bar</span>
+                        <h3 class="product-name">Nutty Delight Bar</h3>
+                        <p class="product-desc">Almonds, cashews, walnuts, pumpkin seeds & flaxseeds with jaggery.</p>
+                        <div class="product-meta">
+                            <div class="product-tags">
+                                <span class="tag">No Refined Sugar</span>
+                                <span class="tag">Omega-3</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">₹179</span>
+                                <span class="price-original">₹229</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('nutty-delight', 'Nutty Delight Bar', 179)" id="add-nutty-delight">
+                                Add to Cart
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bars" data-animate="fade-up">
+                    <div class="product-image" style="background: linear-gradient(135deg, #b7e4c7 0%, #52b788 100%);">
+                        <div class="product-emoji">🌱</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" onclick="quickView('seeds-power')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Snack Bar</span>
+                        <h3 class="product-name">Seeds Power Bar</h3>
+                        <p class="product-desc">Sunflower, sesame, chia & hemp seeds with ragi flour and honey.</p>
+                        <div class="product-meta">
+                            <div class="product-tags">
+                                <span class="tag">Superfood</span>
+                                <span class="tag">Energy Boost</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">₹159</span>
+                                <span class="price-original">₹209</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('seeds-power', 'Seeds Power Bar', 159)" id="add-seeds-power">
+                                Add to Cart
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JAMS, JELLIES, MARMALADES -->
+                <div class="product-card" data-category="jams" data-animate="fade-up">
+                    <div class="product-image" style="background: linear-gradient(135deg, #e76f51 0%, #f4a261 100%);">
+                        <span class="product-badge">Bestseller</span>
+                        <div class="product-emoji">🍓</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" onclick="quickView('mixed-berry-jam')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Jam</span>
+                        <h3 class="product-name">Mixed Berry Jam</h3>
+                        <p class="product-desc">Strawberries, blueberries & raspberries slow-cooked with minimal raw cane sugar.</p>
+                        <div class="product-meta">
+                            <div class="product-tags">
+                                <span class="tag">70% Less Sugar</span>
+                                <span class="tag">No Pectin</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">₹249</span>
+                                <span class="price-original">₹329</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('mixed-berry-jam', 'Mixed Berry Jam', 249)" id="add-mixed-berry-jam">
+                                Add to Cart
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jams" data-animate="fade-up">
+                    <div class="product-image" style="background: linear-gradient(135deg, #fca311 0%, #e9c46a 100%);">
+                        <div class="product-emoji">🍊</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" onclick="quickView('orange-marmalade')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Marmalade</span>
+                        <h3 class="product-name">Orange Marmalade</h3>
+                        <p class="product-desc">Nagpur oranges with zest, slow-cooked with organic jaggery. Tangy & naturally sweet.</p>
+                        <div class="product-meta">
+                            <div class="product-tags">
+                                <span class="tag">Jaggery Sweetened</span>
+                                <span class="tag">Vitamin C</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">₹269</span>
+                                <span class="price-original">₹349</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('orange-marmalade', 'Orange Marmalade', 269)" id="add-orange-marmalade">
+                                Add to Cart
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jams" data-animate="fade-up">
+                    <div class="product-image" style="background: linear-gradient(135deg, #7b2cbf 0%, #c77dff 100%);">
+                        <div class="product-emoji">🍇</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" onclick="quickView('grape-jelly')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Jelly</span>
+                        <h3 class="product-name">Grape Jelly</h3>
+                        <p class="product-desc">Nashik grapes, clear & smooth with natural fruit pectin. Zero artificial colors.</p>
+                        <div class="product-meta">
+                            <div class="product-tags">
+                                <span class="tag">No Artificial Color</span>
+                                <span class="tag">Pure Fruit</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">₹229</span>
+                                <span class="price-original">₹299</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('grape-jelly', 'Grape Jelly', 229)" id="add-grape-jelly">
+                                Add to Cart
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jams" data-animate="fade-up">
+                    <div class="product-image" style="background: linear-gradient(135deg, #bc6c25 0%, #dda15e 100%);">
+                        <span class="product-badge new">New</span>
+                        <div class="product-emoji">🍑</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" onclick="quickView('mango-jam')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Jam</span>
+                        <h3 class="product-name">Alphonso Mango Jam</h3>
+                        <p class="product-desc">Ratnagiri Alphonso mangoes, single-origin. Pure fruit pulp with raw honey.</p>
+                        <div class="product-meta">
+                            <div class="product-tags">
+                                <span class="tag">Seasonal</span>
+                                <span class="tag">Honey Sweetened</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">₹289</span>
+                                <span class="price-original">₹379</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('mango-jam', 'Alphonso Mango Jam', 289)" id="add-mango-jam">
+                                Add to Cart
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CTA BANNER ═══ -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <h2>Ready to Snack <span class="text-accent">Smarter</span>?</h2>
+                <p>Get 15% off your first order. Use code <strong>NUTRI15</strong> at checkout.</p>
+                <a href="#products" class="btn btn-primary btn-lg">Shop All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS ═══ -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span class="text-accent">Customers</span> Say</h2>
+                <p class="section-desc">Real stories from real people who made the switch to NutriNova.</p>
+            </div>
+            <div class="testimonials-grid" data-animate="fade-up">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The Ragi Energy Bar is my go-to pre-workout snack. It keeps me energized without the sugar crash. Best healthy bar I've ever tasted!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div>
+                            <strong>Aisha Khan</strong>
+                            <span>Fitness Trainer, Mumbai</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Finally, a jam that doesn't load my kids with sugar! The Mixed Berry Jam tastes incredibly fresh and real. My whole family loves it."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RP</div>
+                        <div>
+                            <strong>Rohit Patel</strong>
+                            <span>Parent & Health Blogger</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"As a diabetic, finding low-sugar options was a struggle. NutriNova's range is a game-changer. The Orange Marmalade is absolutely divine!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <strong>Sneha Mehra</strong>
+                            <span>Nutritionist, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT SECTION ═══ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact <span class="text-accent">Us</span></h2>
+                <p class="section-desc">Have a question, suggestion, or bulk order inquiry? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid" data-animate="fade-up">
+                <div class="contact-info-panel">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Our Address</strong>
+                            <p>NutriNova Foods Pvt Ltd<br>Green Valley Business Park<br>Pune, Maharashtra 411001</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+91 98765 43210<br>Mon-Sat, 9AM - 7PM IST</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong>Email</strong>
+                            <p>hello@nutrinova.in<br>orders@nutrinova.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="YouTube">🎬</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="order">Order Inquiry</option>
+                            <option value="bulk">Bulk/Corporate Orders</option>
+                            <option value="feedback">Product Feedback</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your inquiry..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-full" id="contactSubmitBtn">
+                        Send Message
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-icon">🌿</span>
+                        <span class="logo-text">Nutri<span class="logo-accent">Nova</span></span>
+                    </a>
+                    <p>Nourishing lives with nature's finest ingredients. Every snack, every spread — made with love and backed by science.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">🎬</a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Ragi Bars</a></li>
+                        <li><a href="#products">Quinoa Bars</a></li>
+                        <li><a href="#products">Fruit Jams</a></li>
+                        <li><a href="#products">Marmalades</a></li>
+                        <li><a href="#products">Jellies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">FAQ</a></li>
+                        <li><a href="#contact">Shipping Policy</a></li>
+                        <li><a href="#contact">Return Policy</a></li>
+                        <li><a href="#contact">Privacy Policy</a></li>
+                        <li><a href="#contact">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NutriNova Foods Pvt Ltd. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span>🔒 Secure Payments</span>
+                    <span>🚚 Free Shipping 500+</span>
+                    <span>✅ FSSAI Certified</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══ CART SIDEBAR ═══ -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>🛒 Your Cart</h3>
+            <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <div class="cart-empty" id="cartEmpty">
+                <div class="cart-empty-icon">🛍️</div>
+                <p>Your cart is empty</p>
+                <a href="#products" class="btn btn-outline" onclick="closeCart()">Start Shopping</a>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-total">
+                <span>Subtotal:</span>
+                <strong id="cartTotal">₹0</strong>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="openCheckout()">Proceed to Checkout</button>
+            <button class="btn btn-outline btn-full btn-sm" onclick="closeCart()">Continue Shopping</button>
+        </div>
+    </aside>
+
+    <!-- ═══ CHECKOUT MODAL ═══ -->
+    <div class="modal-overlay" id="checkoutOverlay"></div>
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-header">
+            <h3>🧾 Checkout</h3>
+            <button class="cart-close" onclick="closeCheckout()" aria-label="Close checkout">✕</button>
+        </div>
+        <div class="checkout-body">
+            <div class="checkout-section">
+                <h4>Order Summary</h4>
+                <div class="checkout-items" id="checkoutItems"></div>
+                <div class="checkout-total-row">
+                    <span>Subtotal</span>
+                    <span id="checkoutSubtotal">₹0</span>
+                </div>
+                <div class="checkout-total-row">
+                    <span>Shipping</span>
+                    <span id="checkoutShipping">₹49</span>
+                </div>
+                <div class="checkout-total-row">
+                    <span>Discount (NUTRI15)</span>
+                    <span id="checkoutDiscount" class="discount-text">-₹0</span>
+                </div>
+                <div class="checkout-total-row total">
+                    <span>Total</span>
+                    <strong id="checkoutTotal">₹0</strong>
+                </div>
+            </div>
+            <div class="checkout-section">
+                <h4>Delivery Details</h4>
+                <form id="checkoutForm" onsubmit="handleCheckout(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="co-name">Full Name</label>
+                            <input type="text" id="co-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="co-phone">Phone</label>
+                            <input type="tel" id="co-phone" placeholder="+91 9876543210" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="co-address">Delivery Address</label>
+                        <textarea id="co-address" rows="3" placeholder="House/Flat, Street, Landmark" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="co-city">City</label>
+                            <input type="text" id="co-city" placeholder="City" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="co-pin">PIN Code</label>
+                            <input type="text" id="co-pin" placeholder="411001" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="co-coupon">Promo Code</label>
+                        <div class="coupon-row">
+                            <input type="text" id="co-coupon" placeholder="Enter code">
+                            <button type="button" class="btn btn-outline btn-sm" onclick="applyCoupon()">Apply</button>
+                        </div>
+                    </div>
+                    <div class="checkout-payment">
+                        <h4>Payment Method</h4>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="cod" checked>
+                                <span class="payment-label">💵 Cash on Delivery</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="upi">
+                                <span class="payment-label">📱 UPI Payment</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="card">
+                                <span class="payment-label">💳 Credit/Debit Card</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-full" id="placeOrderBtn">
+                        Place Order
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ QUICK VIEW MODAL ═══ -->
+    <div class="modal-overlay" id="quickViewOverlay"></div>
+    <div class="quickview-modal" id="quickViewModal">
+        <button class="cart-close" onclick="closeQuickView()" aria-label="Close">✕</button>
+        <div class="qv-body" id="qvBody"></div>
+    </div>
+
+    <!-- ═══ TOAST ═══ -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- ═══ BACK TO TOP ═══ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
